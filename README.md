@@ -9,7 +9,7 @@ C program using open, read, write, close , create , fork() system calls.
 
 There are 5 basic system calls that Unix provides for file I/O.
 
-1.Create: Used to Create a new empty file
+1. Create: Used to Create a new empty file
 
 Syntax :int creat(char *filename, mode_t mode)
 
@@ -17,7 +17,7 @@ filename : name of the file which you want to create
 
 mode : indicates permissions of new file.
 
-2.open: Used to Open the file for reading, writing or both.
+2. open: Used to Open the file for reading, writing or both.
 Syntax: int open(char *path, int flags [ , int mode ] );
 
 Path : path to file which you want to use
@@ -28,10 +28,10 @@ O_RDONLY: read only, O_WRONLY: write only, O_RDWR: read and write, O_CREAT: crea
 
 file if it doesn’t exist, O_EXCL: prevent creation if it already exists
 
-3 close: Tells the operating system you are done with a file descriptor and Close the file which pointed by fd.
+3  close: Tells the operating system you are done with a file descriptor and Close the file which pointed by fd.
 Syntax: int close(int fd);fd :filedescriptor
 
-4 read: From the file indicated by the file descriptor fd, the read() function reads cnt bytes of input into the memory area indicated by buf. A successful read() updates the access time for the file.
+4  read: From the file indicated by the file descriptor fd, the read() function reads cnt bytes of input into the memory area indicated by buf. A successful read() updates the access time for the file.
 Syntax: int read(int fd, char *buf, int size);
 
 fd: file descripter
@@ -40,7 +40,7 @@ buf: buffer to read data from
 
 cnt: length of buffer
 
-5.write: Writes cnt bytes from buf to the file or socket associated with fd. cnt should not begreater
+5. write: Writes cnt bytes from buf to the file or socket associated with fd. cnt should not begreater
 than INT_MAX (defined in the limits.h header file). If cnt is zero, write()simply returns 0without
 
 attempting any other action.
@@ -127,6 +127,8 @@ return 0;
 }
 ```
 OUTPUT:
+
+
 ![image](https://github.com/Thenmozhi-Palanisamy/EX.7-IMPLEMENTATION-OF-SYSTEM-CALLS-READ-WRITE-FORK-OPEN-CLOSE/assets/95198708/1d17175a-81f0-4bd3-8306-e8b7ebc37441)
 
 
